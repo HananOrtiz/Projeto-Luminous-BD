@@ -1,5 +1,6 @@
 create database projetopi;
 use projetopi;
+
 create table DadosAcesso(
 IdEmpresa int primary key auto_increment,
 Nome varchar(60),
@@ -35,6 +36,7 @@ insert into DadosEmpresa values
 select * from DadosEmpresa, DadosAcesso where idEmpresa= fkEmpresa;
 select * from DadosAcesso;
 select * from DadosEmpresa;
+select * from DadosAcesso;
 
 
 
