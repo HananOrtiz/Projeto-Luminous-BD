@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Projetos</title>
+</head>
+<body bgcolor="#000000"  img src="https://i.pinimg.com/474x/81/38/7c/81387c379cf8f54f0dc6b6f2a53785f0.jpg" width="140px" alt="cleiton">
+
+    <center>
+        <br><br><br>
+    <img src="https://media2.giphy.com/media/qkk7SDP5XVxsI/giphy.gif" width="250" alt="Lampada">
+    <img src="https://media2.giphy.com/media/qkk7SDP5XVxsI/giphy.gif" width="250" alt="Lampada">
+    <img src="https://media2.giphy.com/media/qkk7SDP5XVxsI/giphy.gif" width="250" alt="Lampada">
+    <img src="https://media2.giphy.com/media/qkk7SDP5XVxsI/giphy.gif" width="250" alt="Lampada">
+    <img src="https://media2.giphy.com/media/qkk7SDP5XVxsI/giphy.gif" width="250" alt="Lampada"> 
+    <br>
+    <h1>
+        <b style="color: rgb(233, 236, 28);" >Calculadora de Projeto</b>
+    </h1>
+    <br>
+    <h3 style="color: rgb(233, 236, 28);"><strong>Insira a quantidade em metros quadrados do ambiente:</strong></h3>
+    <br>
+    <input id="Metro" type="number" placeholder="Insira o valor em M²">
+    <br>
+    <br>
+    <button onclick="resposta()">
+        Resultado
+    </button>
+    <br>
+    <b style="color: rgb(233, 236, 28);">O preço inicial do orçamento é: R$</b>
+    <b style="color:rgb(233, 236, 28);" id="resposta">...</b>
+    <br><br><br><br><br>
+    <img src="https://media2.giphy.com/media/qkk7SDP5XVxsI/giphy.gif" width="250" alt="Lampada">
+    <img src="https://media2.giphy.com/media/qkk7SDP5XVxsI/giphy.gif" width="250" alt="Lampada">
+    <img src="https://media2.giphy.com/media/qkk7SDP5XVxsI/giphy.gif" width="250" alt="Lampada">
+    <img src="https://media2.giphy.com/media/qkk7SDP5XVxsI/giphy.gif" width="250" alt="Lampada">
+    <img src="https://media2.giphy.com/media/qkk7SDP5XVxsI/giphy.gif" width="250" alt="Lampada">
+</center>
+
+
+
+</body>
+</html>
+<script>
+    function resposta(){
+        var metro2, calcular2
+        metro2 = document.getElementById("Metro").value,
+        calcular2 = metro2 * 20 /* 20 = mao de obra*/
+        document.getElementById("resposta").innerHTML = calcular2
+    }
+</script>
