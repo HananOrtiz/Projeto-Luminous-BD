@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Luminous</title>
+</head>
+<body bgcolor="#808080">
+<img src="nome.jpg" width="100%" alt="">
+<br>
+    <center>
+    
+        <br><br><br><br>
+
+    <h1>
+        <b style=" color: rgb(233, 236, 28);" >Calculadora Luminous</b>
+    </h1>
+    <br>
+    <h3 style="color:rgb(233, 236, 28);"> Insira a média da sua conta de luz:</h3>
+    <br>
+    <input id="valor"  placeholder="Insira seu valor em R$">
+    <h3>Selecione a lâmpada que você utiliza:</h3>
+    <button onclick="incandescente()">Incandescente</button>
+    <button onclick="fluorescente()" >Fluorescente</button>
+    <button onclick="led()" >Led</button>
+    <button onclick="nenhuma()" >Nenhuma</button>
+    <h3 style="color: rgb(233, 236, 28);"><strong>Insira a quantidade em metros quadrados do ambiente:</strong></h3>
+    <br>
+    <input id="Metro" placeholder="Insira o valor em M²">
+    <br>
+    <br>
+    <button onclick="resposta()">
+        Resultado
+    </button>
+    <div id="div_resultado"></div>
+    <br>
+    <br><br><br><br><br>
+    <img src="https://www.socialconnectedness.org/wp-content/uploads/2017/05/light-bulb-1599359_1920.png" width="150px" alt="">
+    
+</center>
+
+</body>
+</html>
+<script>
+
+
+    function resposta(){
+        var calcular = Metro.value * 20;
+        div_resultado.innerHTML= `<span style='color: rgb(233, 236, 28)';> <h3>Seu orçamento será de:</h3></span> 
+        R$<b>${calcular}</b> 
+        `;
+
+    }
+
+
+function incandescente(){
+    var media= valor.value;
+    var substituir= media * 0.66;
+    div_resultado.innerHTML=`<br> Você ira economizar em pelo menos 66% em sua conta com nossos serviços. <br>
+    Com em média uma economia de: R$ <b>${substituir}</b> em sua conta de luz.`;
+}
+
+function fluorescente(){
+    div_resultado.innerHTML='<br> Faremos a verificação de seu ambiente para maior economia em sua conta.'; 
+}
+
+function nenhuma(){
+    div_resultado.innerHTML='<br>Faremos a verificação do seu ambiente para seu negócio ter as melhores condições de iluminação possível !';
+}
+
+function led(){
+    div_resultado.innerHTML=`<br> Se você já usa a
+     lampada de led você já contribui para nosso planeta. <br><img 
+     src="https://images.vexels.com/media/users/3/134595/isolated/preview/525928028c88f02fb50261dd70ceb749-happy-emoticon-emoji-by-vexels.png"
+      width='100px'><br>A luz de led é a mais economica pois é<br>
+    a que utiliza menos carga de energia. Faça seu orçamento <br>a baixo para construirmos junto com você a melhor experiência 
+    <br> de iluminação em seu locl de trabalho. `
+}
+
+
+</script>
