@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora indice K</title>
+</head>
+<body bgcolor="#ABABAD">
+    <center>
+   <h1><span style="color: #F6E884; background-color: black;">Utilizaremos essa calculadora para analisar o indice de quantas luminárias seriam 
+    necessárias para uma eficiência e melhor aproveitamento de cada luminária de acordo com a NBR 15215</span></h1><br>
+    <h2><span style="color: #F6E884; background-color: black;">Comprimento do ambiente (em metros):</span></h2>
+     <input type="text" placeholder="digite aqui" id="comprimento"><br><br>
+    <h2><span style="color: #F6E884; background-color: black;">Largura do ambiente (em metros):</span></h2>
+     <input type="text" placeholder='digite aqui' id="largura"><br><br>
+    <h2><span style="color: #F6E884; background-color: black;">Altura da iluminária (em metros):</span></h2>
+    <input type="text" placeholder="digite aqui" id="altura"><br><br>
+    <button onclick='indiceK()' style='color:#02EE01; background-color: black;'><b>Calcular Indice K</b></button><br><br>
+    <div id="resultado">
+
+    </div>
+    </center>
+</body>
+</html>
+<script>
+    function indiceK(){
+        var multiplicacao = comprimento.value * largura.value;
+        var soma = Number(comprimento.value) + Number(largura.value);
+        var divisao = soma / altura.value;
+        resultado.innerHTML = `${multiplicacao / (soma * altura.value)}`
+
+    }
+</script>
