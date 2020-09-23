@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Projetos</title>
+</head>
+<body style="background-color: 	#F0E68C;">
+    <h1><b style="color:	#FF4500;" >Calculadora Financeira</b></h1>
+    <br>
+    <h3 style="color:#B22222;"><u>Para análise de valor , pedimos que insira a quantidade em metros quadrados do ambiente.</u></h3>
+    <br>
+    <input id="metro" type="number" placeholder="Valor em M²">
+    <br>
+    <br>
+    <button onclick="conta()">
+        Resultado
+    </button> 
+    <div id="resultado"></div>
+    <br>
+    <h2 style="color:#B22222;"><u>Utiliza lâmpadas incandescente? </u></h2>
+    <h3 style="color: rgb(173, 46, 42);">Digite abaixo o valor gasto em sua conta de energia.</h3>
+    <input id="valor" type="number" placeholder="Insira o valor em R$">
+    <button onclick="incandescente()">Calcular</button>
+    <div id="resultadoo"></div>
+
+</body>
+</html>
+
+<script>
+    function conta(){
+        var calculo = metro.value * Number (20) ;
+        resultado.innerHTML = `O preço inicial do orçamento é: R$ ${calculo}`
+    }
+    function incandescente(){
+    var media= valor.value;
+    var substituir= media * 0.66;
+    resultadoo.innerHTML=`<br> <h3 style="color: #B22222;"> Você economizará pelo menos 66% em sua conta com nossos serviços.<br>
+    E a base do novo valor seria de : R$ <b>${substituir}</b> em sua conta de luz.</h3> `;}
+</script>
