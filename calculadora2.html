@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <center>
+        <br><br><br>
+    <h1>
+        <b style="color: black;" >Calculadora de Projeto</b>
+    </h1>
+    <br>
+    <h3 style="color: black;"><strong>Insira a quantidade em metros quadrados do ambiente:</strong></h3>
+    <br>
+    <input id="Metro" type="number" placeholder="Insira o valor em M²">
+    <br>
+    <button onclick="resposta()">
+        Resultado
+    </button>
+    <br>
+    <b style="color: black;">Seu orçamento é de: R$</b>
+    <b style="color: black;" id="resposta">...</b>
+    <h3>Selecione a lâmpada que você utiliza:</h3>
+    <button onclick="incandescente()">Incandescente</button>
+    <button onclick="fluorescente()" >Fluorescente</button>
+    <button onclick="led()" >Led</button>
+    <button onclick="nenhuma()" >Nenhuma</button>
+    <div id="div_resultado"></div>
+ 
+</center>
+
+
+
+</body>
+</html>
+<script>
+    function resposta(){
+        var metro2, calcular
+        metro2 = document.getElementById("Metro").value,
+        calcular = metro2 * 20
+        calcular = metro2  * 10 
+        document.getElementById("resposta").innerHTML = calcular
+    }
+
+
+</script>
